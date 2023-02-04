@@ -426,7 +426,7 @@ int overlay_main(int argc, const char **argv) {
 
 #define OVERLAY_PATH "/data/overlayfs"
 
-int main(){
+int main(argc, argv) {
     if (getpid() != 1)
         return overlay_main(argc, argv);
     // In INIT process
